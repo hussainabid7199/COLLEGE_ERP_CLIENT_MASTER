@@ -1,0 +1,139 @@
+@import url(./stylesheet/style.css);
+@import url(./stylesheet/mainStyle.css);
+
+
+/* body{
+  background-color: orangered;
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 2px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(118, 119, 119); 
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7ec7f1; 
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+
+
+.main-con {
+  display: grid;
+  min-height: calc(65vh - 1rem);
+  place-items: center;
+  background-color: #83636300; 
+}
+
+.center-con {
+  position: relative;
+/*   background-color: white; */
+  animation:spin 7s infinite linear;
+}
+
+.circle > div {
+  --size: 6px;
+  --radius: 18px;
+  position: absolute;
+  top: calc(var(--size)/2);
+  left: calc(var(--size)/2);
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  transform: translate(0px,var(--radius));
+}
+
+
+.circle {
+  opacity: 0;
+  animation: fade-spin 1.8s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+@keyframes spin {
+   to {
+      transform: rotate(360deg);
+  }
+}
+@keyframes fade-spin {
+  0% {
+    
+  }
+  25% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  75% { 
+    opacity: 1;
+    /* // transform: rotate(180deg); */
+  }
+  90% {
+    opacity: 0;
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+.circle:nth-child(1) {
+  animation-delay: calc(0.12 * 1s);
+}
+.circle:nth-child(2) {
+  animation-delay: calc(0.12 * 2s);
+}
+.circle:nth-child(3) {
+  animation-delay: calc(0.12 * 3s);
+}
+.circle:nth-child(4) {
+  animation-delay: calc(0.12 * 4s);
+}
+.circle:nth-child(5) {
+  animation-delay: calc(0.12 * 5s);
+}
+.circle:nth-child(6) {
+  animation-delay: calc(0.12 * 6s);
+}
+.circle:nth-child(7) {
+  animation-delay: calc(0.12 * 7s);
+}
+
+.content{
+  height: 100vh;
+  background-image: url(../src/images/bgmi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+}
