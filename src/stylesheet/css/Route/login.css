@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Login */
+.LoginMain {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #eef1f5;
+}
+
+#Background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+#Background img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-container {
+  position: relative;
+}
+
+.login-box {
+  /* border: 2px solid red; */
+  position: absolute;
+  width: 364px;
+  height: 414px;
+  left: auto;
+  top: 131px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px 2px rgba(4, 61, 94, 0.2);
+}
+
+.logo img {
+  position: absolute;
+  width: 70px;
+  left: 40.85%;
+  right: 38.82%;
+  top: 6%;
+  bottom: 77.59%;
+}
+
+.input-group {
+  top: 140px;
+  position: absolute;
+  width: 285px !important;
+  transition: 0.5s;
+  left: 40px;
+}
+
+.input-group-1 {
+  top: 130px;
+  position: absolute;
+  width: 285px !important;
+  transition: 0.5s;
+  left: 40px;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box img {
+  width: 20px;
+  margin: 10px;
+}
+
+.hide-icon {
+  position: absolute;
+  width: 10px !important;
+  left: 250px;
+}
+
+.input-field {
+  width: 100% !important;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+  left: 20%;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  /* margin-left: 10%;  */
+  background: linear-gradient(270deg, #0097ec 0%, #003ad2 100%);
+  border: 0;
+  outline: none;
+  color: #fff;
+  border-radius: 30px;
+  /* font-weight: 600; */
+  font-size: 20px;
+  line-height: 22px;
+  /* text-decoration: none !important; */
+}
+
+.forgot-password {
+  position: absolute;
+  width: 168px;
+  height: 22px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22px;
+  top: 125px;
+  left: 140px;
+  /* identical to box height */
+  text-align: center;
+  color: #003ad2;
+}
+
+.get-otp {
+  /* position: absolute; */
+  width: 80px;
+  height: 22px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22px;
+  top: 100px;
+  left: 140px;
+}
+
+#hide1 {
+  display: none;
+  cursor: pointer;
+}
+
+#hide2 {
+  cursor: pointer;
+}
+
+#hide4 {
+  cursor: pointer;
+}
+
+#hide3 {
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #Background {
+    width: 100%;
+  }
+  .topimg {
+    position: absolute;
+    width: 15%;
+    left: 0px;
+    top: 0px;
+  }
+  .login-box {
+    /* border: 2px solid red; */
+    position: absolute;
+    width: 264px;
+    height: 364px;
+    left: 595px;
+    top: 141px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px 2px rgba(4, 61, 94, 0.2);
+  }
+}
+/* Login */
+
+/*# sourceMappingURL=login.css.map */

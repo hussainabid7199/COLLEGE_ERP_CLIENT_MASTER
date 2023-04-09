@@ -113,7 +113,7 @@ export default function Login() {
 
 
 
-                <Link to={"/underdevelopment"}> <span className="forgot-password">Forgot Password</span>  </Link>
+                <Link to={"/forgotpassword"}> <span className="forgot-password">Forgot Password</span>  </Link>
                 <div className='mt-5 container d-flex justify-content-center'>
                   <button onClick={handleLoginUser} type="submit" className="submit-btn">Log In</button>
                 </div>

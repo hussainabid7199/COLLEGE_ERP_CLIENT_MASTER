@@ -1,0 +1,20 @@
+@import url(../scss/Route/dashboard.scss);
+@import url(../scss/Route/login.scss);
+@import url(../scss/Route/underdev.scss);
+.menutoggle {
+  margin-left: -25px !important;
+  margin-right: 20px !important;
+  color: black;
+  float: left;
+}
+
+.right-panel {
+  margin-left: 280px;
+  margin-top: 55px;
+}
+
+.main-menu {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

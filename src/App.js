@@ -3,16 +3,13 @@ import './App.css';
 import Login from "./components/Request/Post/Login";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Underdev from "./components/partials/Underdev";
+import Forgetpassword from "./components/Testing/Forgetpassword";
+import Resetpassword from "./components/Testing/Resetpassword";
 
-
-
+// "proxy": "https://college-erp-server.vercel.app/",
 
 
 function App() {
-  // toast.error("ERROR");
-  // toast.success("SUCCESFUL");
-  // toast.info("INFORMALIZED");
-  // toast.warn("WARNING");
   return (
     <div className="App">
       {/* <ToastContainer
@@ -40,6 +37,8 @@ function App() {
         <Route exact path="/dashboard/student/attandance" element={<Dashboard />} />
         <Route exact path="/dashboard/student/fee" element={<Dashboard />} />
         <Route exact path="/underdevelopment" element={<Underdev />} />
+        <Route exact path="/forgotpassword" element={<Forgetpassword/>}/>
+        <Route exact path="/resetpassword" element={<Resetpassword/>}/>
       </Routes>
     </div>
   );

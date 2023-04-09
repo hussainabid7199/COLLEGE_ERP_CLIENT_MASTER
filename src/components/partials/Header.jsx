@@ -3,13 +3,18 @@ import { Link } from 'react-router-dom';
 
 // Images 
 import admin from "../../images/admin.jpg";
-import logo1 from "../../images/logo 1.png"
+import logo1 from "../../images/logo 1.png";
+import { useNavigate } from 'react-router-dom';
 
 
 // Images 
 
 export default function Header() {
-
+    const navigate = useNavigate();
+    const Logout = ()=>{
+        localStorage.removeItem("tokens");
+        navigate("/")
+    }
  
     return (
         <>
@@ -128,7 +133,7 @@ export default function Header() {
                                         className="count">13</span></a></li>
                                     <li><a class="dropdown-item nav-link" href="/"><i className="fa fa -cog"></i>Settings</a></li>
                                     <li><hr class="dropdown-divider" /></li>
-                                    <li><Link class="dropdown-item nav-link"><i className="fa fa-power -off"></i>Logout</Link></li>
+                                    <li><Link class="dropdown-item nav-link" onClick={Logout}><i className="fa fa-power -off"></i>Logout</Link></li>
                                 </ul>
                             </div>
                         </div>
