@@ -13,36 +13,38 @@ export default function Dashboard() {
 
   const navigate = useNavigate();
   const [clientData, setClientData] = useState([]);
+  
+  
   useEffect(() => {
-    usersDasboard();
-  }, [false]);
-  const usersDasboard = async () => {
-    try {
-      const response = await fetch("/dashboard", {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json"
-        },
-        credentials: "include"
-      })
+    const usersDasboard = async () => {
+      try {
+        const response = await fetch("/dashboard", {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json"
+          },
+          credentials: "include"
+        })
 
-      const data = await response.json();
-      console.log(data);
-      if (!response.status === 200) {
-        const error = new Error(response.error);
-        throw error;
-      } else {
-        setClientData(data);
+        const data = await response.json();
+        console.log(data);
+        if (!response.status === 200) {
+          const error = new Error(response.error);
+          throw error;
+        } else {
+          setClientData(data);
+        }
+
+
+      } catch (err) {
+        console.log(err);
+        navigate("/");
       }
 
-
-    } catch (err) {
-      console.log(err);
-      navigate("/");
     }
-
-  }
+    usersDasboard();
+  }, []);
 
 
   const panalHandler = () => {
