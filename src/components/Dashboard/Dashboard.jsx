@@ -9,7 +9,7 @@ import StudentRoute from '../Routes/Admin/StudentRoute';
 
 
 
-export default function Dashboard() {
+export default function Dashboard(user) {
 
   const navigate = useNavigate();
   const [clientData, setClientData] = useState([]);
@@ -44,7 +44,7 @@ export default function Dashboard() {
 
     }
     usersDasboard();
-  }, []);
+  }, [user]);
 
 
   const panalHandler = () => {
