@@ -13,7 +13,9 @@ export default function Dashboard() {
 
   const navigate = useNavigate();
   const [clientData, setClientData] = useState([]);
-  
+  useEffect(() => {
+    usersDasboard();
+  }, []);
   const usersDasboard = async () => {
     try {
       const response = await fetch("/dashboard", {
@@ -63,9 +65,7 @@ export default function Dashboard() {
   }
 
 
-  useEffect(() => {
-    usersDasboard();
-  }, []);
+
 
   return (
     <div>

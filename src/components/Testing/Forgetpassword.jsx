@@ -7,7 +7,7 @@ import LoadingSpinner from '../partials/LoadingSpinner';
 
 
 export default function Forgetpassword() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [isLoading, setIsLoading] = useState(false);
 
