@@ -29,6 +29,7 @@ export default function Login() {
     e.preventDefault();
     const loginData = await fetch("/login", {
       method: "POST",
+      mode: "cors",
       headers: {
         "Content-Type": "application/json"
       },
