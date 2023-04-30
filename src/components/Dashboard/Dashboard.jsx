@@ -15,7 +15,7 @@ export default function Dashboard() {
   const [clientData, setClientData] = useState([]);
   useEffect(() => {
     usersDasboard();
-  }, []);
+  }, [false]);
   const usersDasboard = async () => {
     try {
       const response = await fetch("/dashboard", {
