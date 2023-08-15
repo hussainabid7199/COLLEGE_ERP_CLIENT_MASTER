@@ -10,6 +10,7 @@ import Background from "../../../images/login/background.png";
 import Logo from "../../../images/login/logo1.png";
 import EmailSign from "../../../images/icon/EmailSign.png";
 import Lock from "../../../images/icon/Lock.png";
+import { toast } from 'react-toastify';
 // import Hide from "../../../images/icon/hide.png";
 // import Eye from "../../../images/icon/eye.png";
 
@@ -47,6 +48,7 @@ export default function Login() {
     else {
       navigate("/dashboard");
       console.log("Login Successfull");
+      toast.success("Login Successfull!");
     }
   }
 

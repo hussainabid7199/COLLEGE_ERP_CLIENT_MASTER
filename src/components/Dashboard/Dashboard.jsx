@@ -44,7 +44,7 @@ export default function Dashboard(user) {
 
     }
     usersDasboard();
-  }, [user]);
+  }, [navigate, user]);
 
 
   const panalHandler = () => {

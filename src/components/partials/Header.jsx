@@ -123,17 +123,17 @@ export default function Header() {
                             <Link className="nav-link" to={"#"}><i className="fa fa-power -off"></i>Logout</Link>
                         </div>
                     </div> */}
-                            <div class="user-area dropdown float-right">
-                                <a href="/" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div className="user-area dropdown float-right">
+                                <a href="/" className="d-flex align-items-center text-white text-decoration-none dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img className="user-avatar rounded-circle" src={admin} alt="User Avatar" />
                                 </a>
-                                <ul class="user-menu dropdown-menu">
-                                    <li><a class="dropdown-item nav-link" href="/"><i className="fa fa- user"></i>My Profile</a></li>
-                                    <li><a class="dropdown-item nav-link" href="/"><i className="fa fa- user"></i>Notifications <span
+                                <ul className="user-menu dropdown-menu">
+                                    <li><a className="dropdown-item nav-link" href="/"><i className="fa fa- user"></i>My Profile</a></li>
+                                    <li><a className="dropdown-item nav-link" href="/"><i className="fa fa- user"></i>Notifications <span
                                         className="count">13</span></a></li>
-                                    <li><a class="dropdown-item nav-link" href="/"><i className="fa fa -cog"></i>Settings</a></li>
-                                    <li><hr class="dropdown-divider" /></li>
-                                    <li><Link class="dropdown-item nav-link" onClick={Logout}><i className="fa fa-power -off"></i>Logout</Link></li>
+                                    <li><a className="dropdown-item nav-link" href="/"><i className="fa fa -cog"></i>Settings</a></li>
+                                    <li><hr className="dropdown-divider" /></li>
+                                    <li><Link className="dropdown-item nav-link" onClick={Logout}><i className="fa fa-power -off"></i>Logout</Link></li>
                                 </ul>
                             </div>
                         </div>
